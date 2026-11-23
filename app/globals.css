@@ -1,0 +1,376 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-latin), var(--font-arabic), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", monospace;
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  /* ECHO obsidian accents */
+  --color-echo-accent: var(--echo-accent);
+  --color-echo-accent-deep: var(--echo-accent-deep);
+  --color-echo-teal: var(--echo-teal);
+  --color-echo-gold: var(--echo-gold);
+  --color-echo-pine: var(--echo-pine);
+  --color-echo-plum: var(--echo-plum);
+  --color-echo-success: var(--echo-pine);
+  --color-echo-warning: var(--echo-gold);
+  --color-echo-danger: var(--destructive);
+  /* status hues */
+  --color-status-completed: var(--status-completed);
+  --color-status-watching: var(--status-watching);
+  --color-status-planned: var(--status-planned);
+  --color-status-dropped: var(--status-dropped);
+  --color-status-hold: var(--status-hold);
+}
+
+/* ============================================================
+   ECHO design language — "Obsidian".
+   A deep-cinema surface system: layered blacks, hairline
+   starlight borders, and color used only with meaning.
+   Ember = actions · Signal = intelligence · Gold = ratings.
+   (A "Porcelain" light mode can later ride the same token
+   names — every component reads them, nothing is hardcoded.)
+   ============================================================ */
+
+:root {
+  --radius: 0.75rem;
+
+  /* the obsidian ladder */
+  --obsidian-0: #07090d; /* deepest — app base */
+  --obsidian-1: #0a0d12; /* canvas */
+  --obsidian-2: #10141b; /* surface / cards */
+  --obsidian-3: #171c26; /* raised */
+  --obsidian-4: #1f2632; /* highest */
+  --echo-map-glow: #16202f; /* nebula behind the taste map */
+
+  /* hairlines — starlight, never pure white */
+  --line-1: rgba(236, 240, 250, 0.08);
+  --line-2: rgba(236, 240, 250, 0.14);
+
+  /* text ladder */
+  --t1: #f2f5fa;
+  --t2: #9aa5b8;
+  --t3: #5d6878;
+
+  --background: var(--obsidian-1);
+  --foreground: var(--t1);
+  --card: var(--obsidian-2);
+  --card-foreground: var(--t1);
+  --popover: var(--obsidian-3);
+  --popover-foreground: var(--t1);
+
+  /* ember — the one loud color: actions & confirmation */
+  --primary: #ff7e54;
+  --primary-foreground: #1a0e08;
+
+  --secondary: var(--obsidian-3);
+  --secondary-foreground: #dce3ee;
+  --muted: var(--obsidian-3);
+  --muted-foreground: var(--t2);
+  --accent: var(--obsidian-4);
+  --accent-foreground: var(--t1);
+
+  --destructive: #ff6e5e;
+  --border: var(--line-1);
+  --input: var(--line-2);
+  --ring: #ff7e54;
+
+  --chart-1: #ff7e54;
+  --chart-2: #52c7b0;
+  --chart-3: #e9c268;
+  --chart-4: #74d693;
+  --chart-5: #b58fc8;
+
+  --sidebar: var(--obsidian-1);
+  --sidebar-foreground: var(--t1);
+  --sidebar-primary: #ff7e54;
+  --sidebar-primary-foreground: #1a0e08;
+  --sidebar-accent: var(--obsidian-3);
+  --sidebar-accent-foreground: var(--t1);
+  --sidebar-border: var(--line-1);
+  --sidebar-ring: #ff7e54;
+
+  /* atlas accents — obsidian hues */
+  --echo-accent: #ff7e54;         /* ember — actions */
+  --echo-accent-deep: #c85a34;
+  --echo-teal: #52c7b0;           /* signal — the mind of ECHO */
+  --echo-gold: #e9c268;           /* gold — ratings */
+  --echo-pine: #74d693;           /* success / completed */
+  --echo-plum: #b58fc8;
+
+  --status-completed: #74d693;
+  --status-watching: #52c7b0;
+  --status-planned: #e9c268;
+  --status-dropped: #ff6e5e;
+  --status-hold: #8b96a8;
+
+  --ink-0: rgba(242, 245, 250, 0.92);
+  --ink-1: rgba(242, 245, 250, 0.62);
+  --ink-2: rgba(242, 245, 250, 0.32);
+  --ink-3: rgba(242, 245, 250, 0.12);
+  --paper-raise: var(--obsidian-4);
+}
+
+/* Obsidian is the app's single skin for now. The class-based theme
+   hooks stay (so a future Porcelain light theme drops in without
+   touching any component) but both resolve to the same values. */
+.dark {
+  --background: var(--obsidian-1);
+  --foreground: var(--t1);
+  --card: var(--obsidian-2);
+  --card-foreground: var(--t1);
+  --popover: var(--obsidian-3);
+  --popover-foreground: var(--t1);
+
+  --primary: #ff7e54;
+  --primary-foreground: #1a0e08;
+
+  --secondary: var(--obsidian-3);
+  --secondary-foreground: #dce3ee;
+  --muted: var(--obsidian-3);
+  --muted-foreground: var(--t2);
+  --accent: var(--obsidian-4);
+  --accent-foreground: var(--t1);
+
+  --destructive: #ff6e5e;
+  --border: var(--line-1);
+  --input: var(--line-2);
+  --ring: #ff7e54;
+
+  --chart-1: #ff7e54;
+  --chart-2: #52c7b0;
+  --chart-3: #e9c268;
+  --chart-4: #74d693;
+  --chart-5: #b58fc8;
+
+  --sidebar: var(--obsidian-1);
+  --sidebar-foreground: var(--t1);
+  --sidebar-primary: #ff7e54;
+  --sidebar-primary-foreground: #1a0e08;
+  --sidebar-accent: var(--obsidian-3);
+  --sidebar-accent-foreground: var(--t1);
+  --sidebar-border: var(--line-1);
+  --sidebar-ring: #ff7e54;
+
+  --echo-accent: #ff7e54;
+  --echo-accent-deep: #c85a34;
+  --echo-teal: #52c7b0;
+  --echo-gold: #e9c268;
+  --echo-pine: #74d693;
+  --echo-plum: #b58fc8;
+
+  --status-completed: #74d693;
+  --status-watching: #52c7b0;
+  --status-planned: #e9c268;
+  --status-dropped: #ff6e5e;
+  --status-hold: #8b96a8;
+
+  --ink-0: rgba(242, 245, 250, 0.92);
+  --ink-1: rgba(242, 245, 250, 0.62);
+  --ink-2: rgba(242, 245, 250, 0.32);
+  --ink-3: rgba(242, 245, 250, 0.12);
+  --paper-raise: var(--obsidian-4);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    color-scheme: dark;
+    scrollbar-color: var(--ink-2) transparent;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-latin), var(--font-arabic), ui-sans-serif, system-ui, sans-serif;
+  }
+  ::selection {
+    background: color-mix(in srgb, var(--echo-accent) 30%, transparent);
+  }
+  input,
+  select,
+  textarea {
+    color-scheme: dark;
+  }
+}
+
+@layer base {
+  /* thin scrollbars, starlight-tinted */
+  .echo-scroll::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  .echo-scroll::-webkit-scrollbar-thumb {
+    background: var(--ink-2);
+    border-radius: 8px;
+  }
+  .echo-scroll::-webkit-scrollbar-thumb:hover {
+    background: var(--ink-1);
+  }
+  .echo-scroll::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
+/* ---------- the obsidian surface ----------
+   Deep base + a faint static starfield + one soft nebula at the
+   top. Static assets only — no animation, no glow without meaning. */
+.echo-paper {
+  background-color: var(--obsidian-0);
+  background-image:
+    radial-gradient(1100px 480px at 50% -10%, rgba(22, 32, 47, 0.85) 0%, transparent 70%),
+    radial-gradient(rgba(226, 236, 255, 0.55) 0.6px, transparent 1.1px);
+  background-size: auto, 46px 42px;
+  background-attachment: fixed;
+}
+
+/* flat card: raised obsidian, hairline starlight border */
+.echo-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  box-shadow: 0 18px 40px -28px rgba(0, 0, 0, 0.8);
+}
+
+/* overline labels — the quiet way to say "section" */
+.echo-overline {
+  font-size: 10px;
+  font-weight: 650;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+[dir="rtl"] .echo-overline,
+html[lang="ar"] .echo-overline {
+  letter-spacing: 0.04em;
+}
+
+/* display type — Space Grotesk for latin, Alexandria for arabic
+   (the stack itself resolves per-glyph, no lang switch needed) */
+.echo-display {
+  font-family: var(--font-latin), var(--font-arabic), sans-serif;
+  font-optical-sizing: auto;
+  letter-spacing: -0.01em;
+}
+html[lang="ar"] .echo-display {
+  letter-spacing: 0;
+}
+
+/* the map sheet: a window into deep space, framed in starlight */
+.echo-sheet {
+  position: relative;
+  background: var(--card);
+  border: 1px solid var(--line-2);
+  border-radius: calc(var(--radius) + 6px);
+  box-shadow:
+    inset 0 1px 0 rgba(236, 240, 250, 0.04),
+    0 30px 80px -30px rgba(0, 0, 0, 0.75);
+}
+
+/* dashed hairline, used under section titles */
+.echo-rule {
+  border: 0;
+  border-top: 1px dashed var(--ink-2);
+}
+
+/* boot breathing — the only idle animation, on the boot mark only */
+@keyframes echo-breathe {
+  0%, 100% { opacity: 0.55; transform: scale(0.97); }
+  50% { opacity: 1; transform: scale(1.03); }
+}
+.echo-breathe {
+  animation: echo-breathe 2.6s ease-in-out infinite;
+}
+
+/* map reveal (respects prefers-reduced-motion via media query) */
+@keyframes echo-rise {
+  from { opacity: 0; transform: translateY(14px) scale(0.985); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+.echo-rise {
+  /* `backwards` (not `both`): the end state equals the natural state, so no
+     lingering transform — a kept transform would create a containing block
+     and break the fixed mobile bottom nav. */
+  animation: echo-rise 0.5s cubic-bezier(0.22, 1, 0.36, 1) backwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .echo-breathe,
+  .echo-rise {
+    animation: none;
+  }
+  * {
+    scroll-behavior: auto !important;
+  }
+}
+
+/* status ring styles shared by map legend + chips */
+.echo-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  display: inline-block;
+}
+
+/* pill tag chip (source attributions, genres) */
+.echo-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  border: 1px solid var(--line-2);
+  border-radius: 999px;
+  padding: 0.12rem 0.55rem;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--muted-foreground);
+  /* solid backing: chips sit on posters, so they must stay legible */
+  background: var(--obsidian-3);
+  white-space: nowrap;
+}
+
+/* horizontal poster shelf: content fades out at the overflow edge.
+   Logical side: LTR overflows right, RTL overflows left. */
+.echo-shelf {
+  mask-image: linear-gradient(to right, black 88%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, black 88%, transparent 100%);
+}
+[dir="rtl"] .echo-shelf {
+  mask-image: linear-gradient(to left, black 88%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to left, black 88%, transparent 100%);
+}
