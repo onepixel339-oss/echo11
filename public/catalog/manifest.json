@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-23",
+  "shards": [
+    {
+      "id": "pg-classics-en",
+      "file": "pg-classics-en.json",
+      "version": 1,
+      "label": "Public-domain classics"
+    }
+  ]
+}

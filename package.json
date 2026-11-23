@@ -1,0 +1,52 @@
+{
+  "name": "echo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ECHO — Your taste, mapped. A local-first atlas of your media taste across anime, manga, movies, series, games, books and comics.",
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "build:standalone": "next build && cp -r .next/static .next/standalone/.next/ && cp -r public .next/standalone/",
+    "start": "next start -p 3000",
+    "start:standalone": "NODE_ENV=production bun .next/standalone/server.js",
+    "lint": "eslint .",
+    "test": "bun test src/lib/echo/__tests__",
+    "icons": "bun run scripts/generate-icons.ts"
+  },
+  "dependencies": {
+    "@radix-ui/react-alert-dialog": "^1.1.15",
+    "@radix-ui/react-dialog": "^1.1.15",
+    "@radix-ui/react-popover": "^1.1.15",
+    "@radix-ui/react-select": "^2.2.6",
+    "@radix-ui/react-slider": "^1.3.6",
+    "@radix-ui/react-slot": "^1.2.4",
+    "@radix-ui/react-switch": "^1.2.6",
+    "@radix-ui/react-toast": "^1.2.15",
+    "@radix-ui/react-toggle": "^1.1.10",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.26.2",
+    "lucide-react": "^0.525.0",
+    "next": "^16.1.3",
+    "next-themes": "^0.4.6",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "tailwind-merge": "^3.4.0",
+    "tailwindcss-animate": "^1.0.7",
+    "z-ai-web-dev-sdk": "^0.0.18",
+    "zod": "^4.3.5",
+    "zustand": "^5.0.10"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.18",
+    "@types/react": "^19.2.8",
+    "@types/react-dom": "^19.2.3",
+    "bun-types": "^1.3.6",
+    "eslint": "^9.39.2",
+    "eslint-config-next": "^16.1.3",
+    "fake-indexeddb": "^6.2.8",
+    "tailwindcss": "^4.1.18",
+    "tw-animate-css": "^1.4.0",
+    "typescript": "^5.9.3"
+  }
+}

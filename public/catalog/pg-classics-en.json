@@ -1,0 +1,512 @@
+{
+  "shardId": "pg-classics-en",
+  "version": 1,
+  "label": "Public-domain classics",
+  "licenseNote": "works in the public domain (US); bibliographic facts + original ECHO descriptions; free reading via Project Gutenberg",
+  "records": [
+    {
+      "id": "pg-alice",
+      "mediaType": "book",
+      "title": "Alice's Adventures in Wonderland",
+      "originalTitle": "Alice's Adventures in Wonderland",
+      "year": 1865,
+      "creators": [
+        "Lewis Carroll"
+      ],
+      "genres": [
+        "fantasy",
+        "classics",
+        "children"
+      ],
+      "languages": [
+        "English"
+      ],
+      "countries": [
+        "UK"
+      ],
+      "synopsis": "A bored girl follows a waistcoated rabbit down a hole and argues logic with a caterpillar, a duchess and a queen who plays croquet with flamingos.",
+      "gutenbergId": 11,
+      "freeReadingUrl": "https://www.gutenberg.org/ebooks/11"
+    },
+    {
+      "id": "pg-wuthering-heights",
+      "mediaType": "book",
+      "title": "Wuthering Heights",
+      "year": 1847,
+      "creators": [
+        "Emily Brontë"
+      ],
+      "genres": [
+        "drama",
+        "classics",
+        "romance"
+      ],
+      "languages": [
+        "English"
+      ],
+      "countries": [
+        "UK"
+      ],
+      "synopsis": "On the Yorkshire moors a foundling and his adoptive sister tear each other and two houses apart across a generation.",
+      "gutenbergId": 768,
+      "freeReadingUrl": "https://www.gutenberg.org/ebooks/768"
+    },
+    {
+      "id": "pg-jane-eyre",
+      "mediaType": "book",
+      "title": "Jane Eyre",
+      "year": 1847,
+      "creators": [
+        "Charlotte Brontë"
+      ],
+      "genres": [
+        "romance",
+        "drama",
+        "classics"
+      ],
+      "languages": [
+        "English"
+      ],
+      "countries": [
+        "UK"
+      ],
+      "synopsis": "A plain governess with a spine of steel insists on being an equal, even when the man she loves is hiding a wife in the attic.",
+      "gutenbergId": 1260,
+      "freeReadingUrl": "https://www.gutenberg.org/ebooks/1260"
+    },
+    {
+      "id": "pg-great-expectations",
+      "mediaType": "book",
+      "title": "Great Expectations",
+      "year": 1861,
+      "creators": [
+        "Charles Dickens"
+      ],
+      "genres": [
+        "drama",
+        "classics",
+        "fiction"
+      ],
+      "languages": [
+        "English"
+      ],
+      "countries": [
+        "UK"
+      ],
+      "synopsis": "A blacksmith's apprentice is lifted into money by an unknown benefactor and slowly learns who paid for his illusions.",
+      "gutenbergId": 1400,
+      "freeReadingUrl": "https://www.gutenberg.org/ebooks/1400"
+    },
+    {
+      "id": "pg-little-women",
+      "mediaType": "book",
+      "title": "Little Women",
+      "year": 1868,
+      "creators": [
+        "Louisa May Alcott"
+      ],
+      "genres": [
+        "family",
+        "classics",
+        "drama"
+      ],
+      "languages": [
+        "English"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "synopsis": "Four sisters grow up poor, ambitious and unmistakably themselves during the American Civil War.",
+      "gutenbergId": 514,
+      "freeReadingUrl": "https://www.gutenberg.org/ebooks/514"
+    },
+    {
+      "id": "pg-treasure-island",
+      "mediaType": "book",
+      "title": "Treasure Island",
+      "year": 1883,
+      "creators": [
+        "Robert Louis Stevenson"
+      ],
+      "genres": [
+        "adventure",
+        "classics"
+      ],
+      "languages": [
+        "English"
+      ],
+      "countries": [
+        "UK"
+      ],
+      "synopsis": "A boy, a map and the most charming pirate in literature sail toward buried gold and mutiny.",
+      "gutenbergId": 120,
+      "freeReadingUrl": "https://www.gutenberg.org/ebooks/120"
+    },
+    {
+      "id": "pg-dorian-gray",
+      "mediaType": "book",
+      "title": "The Picture of Dorian Gray",
+      "year": 1890,
+      "creators": [
+        "Oscar Wilde"
+      ],
+      "genres": [
+        "horror",
+        "classics",
+        "philosophical-fiction"
+      ],
+      "languages": [
+        "English"
+      ],
+      "countries": [
+        "UK"
+      ],
+      "synopsis": "A beautiful young man keeps his looks while his hidden portrait does the aging for him.",
+      "gutenbergId": 174,
+      "freeReadingUrl": "https://www.gutenberg.org/ebooks/174"
+    },
+    {
+      "id": "pg-sherlock-holmes",
+      "mediaType": "book",
+      "title": "The Adventures of Sherlock Holmes",
+      "year": 1892,
+      "creators": [
+        "Arthur Conan Doyle"
+      ],
+      "genres": [
+        "mystery",
+        "classics",
+        "crime"
+      ],
+      "languages": [
+        "English"
+      ],
+      "countries": [
+        "UK"
+      ],
+      "synopsis": "A consulting detective reads lives out of walking sticks, and twelve cases made the genre.",
+      "gutenbergId": 1661,
+      "freeReadingUrl": "https://www.gutenberg.org/ebooks/1661"
+    },
+    {
+      "id": "pg-heart-of-darkness",
+      "mediaType": "book",
+      "title": "Heart of Darkness",
+      "year": 1899,
+      "creators": [
+        "Joseph Conrad"
+      ],
+      "genres": [
+        "classics",
+        "fiction",
+        "politics"
+      ],
+      "languages": [
+        "English"
+      ],
+      "countries": [
+        "UK"
+      ],
+      "synopsis": "A steamboat captain sails up the Congo toward a trader the company calls a voice, and the journey asks what Europe left at every station.",
+      "gutenbergId": 219,
+      "freeReadingUrl": "https://www.gutenberg.org/ebooks/219"
+    },
+    {
+      "id": "pg-wizard-of-oz",
+      "mediaType": "book",
+      "title": "The Wonderful Wizard of Oz",
+      "year": 1900,
+      "creators": [
+        "L. Frank Baum"
+      ],
+      "genres": [
+        "fantasy",
+        "children",
+        "adventure"
+      ],
+      "languages": [
+        "English"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "synopsis": "A cyclone drops a Kansas girl on a witch's enemy list, and her walk down the yellow brick road assembles the strangest family in American fairyland.",
+      "gutenbergId": 55,
+      "freeReadingUrl": "https://www.gutenberg.org/ebooks/55"
+    },
+    {
+      "id": "pg-call-of-the-wild",
+      "mediaType": "book",
+      "title": "The Call of the Wild",
+      "year": 1903,
+      "creators": [
+        "Jack London"
+      ],
+      "genres": [
+        "adventure",
+        "classics"
+      ],
+      "languages": [
+        "English"
+      ],
+      "countries": [
+        "USA"
+      ],
+      "synopsis": "A stolen house dog is dragged into the Klondike sled teams and hears the old wild calling his blood.",
+      "gutenbergId": 215,
+      "freeReadingUrl": "https://www.gutenberg.org/ebooks/215"
+    },
+    {
+      "id": "pg-anne-of-green-gables",
+      "mediaType": "book",
+      "title": "Anne of Green Gables",
+      "year": 1908,
+      "creators": [
+        "L. M. Montgomery"
+      ],
+      "genres": [
+        "family",
+        "classics",
+        "childhood"
+      ],
+      "languages": [
+        "English"
+      ],
+      "countries": [
+        "Canada"
+      ],
+      "synopsis": "An orphan is sent to a farm that wanted a boy, and talks her way into the island's heart anyway.",
+      "gutenbergId": 45,
+      "freeReadingUrl": "https://www.gutenberg.org/ebooks/45"
+    },
+    {
+      "id": "pg-secret-garden",
+      "mediaType": "book",
+      "title": "The Secret Garden",
+      "year": 1911,
+      "creators": [
+        "Frances Hodgson Burnett"
+      ],
+      "genres": [
+        "family",
+        "classics",
+        "childhood"
+      ],
+      "languages": [
+        "English"
+      ],
+      "countries": [
+        "UK"
+      ],
+      "synopsis": "A sour orphan and a hidden cousin are revived, along with a locked garden, by the least sentimental kind of magic.",
+      "gutenbergId": 113,
+      "freeReadingUrl": "https://www.gutenberg.org/ebooks/113"
+    },
+    {
+      "id": "pg-time-machine",
+      "mediaType": "book",
+      "title": "The Time Machine",
+      "year": 1895,
+      "creators": [
+        "H. G. Wells"
+      ],
+      "genres": [
+        "sci-fi",
+        "classics"
+      ],
+      "languages": [
+        "English"
+      ],
+      "countries": [
+        "UK"
+      ],
+      "synopsis": "A Victorian inventor rides to the year 802,701 and finds that humanity's future has already split in two.",
+      "gutenbergId": 35,
+      "freeReadingUrl": "https://www.gutenberg.org/ebooks/35"
+    },
+    {
+      "id": "pg-dracula",
+      "mediaType": "book",
+      "title": "Dracula",
+      "year": 1897,
+      "creators": [
+        "Bram Stoker"
+      ],
+      "genres": [
+        "horror",
+        "classics"
+      ],
+      "languages": [
+        "English"
+      ],
+      "countries": [
+        "UK"
+      ],
+      "synopsis": "An English estate buys a Transylvanian castle and gains a count, in letters and diaries that only slowly admit what has moved in.",
+      "gutenbergId": 345,
+      "freeReadingUrl": "https://www.gutenberg.org/ebooks/345"
+    },
+    {
+      "id": "pg-middlemarch",
+      "mediaType": "book",
+      "title": "Middlemarch",
+      "year": 1871,
+      "creators": [
+        "George Eliot"
+      ],
+      "genres": [
+        "drama",
+        "classics",
+        "fiction"
+      ],
+      "languages": [
+        "English"
+      ],
+      "countries": [
+        "UK"
+      ],
+      "synopsis": "In one provincial town, marriages, reforms and ambitions fail instructively, and the novel measures every heart against its time.",
+      "gutenbergId": 145,
+      "freeReadingUrl": "https://www.gutenberg.org/ebooks/145"
+    },
+    {
+      "id": "pg-les-miserables",
+      "mediaType": "book",
+      "title": "Les Misérables",
+      "originalTitle": "Les Misérables",
+      "year": 1862,
+      "creators": [
+        "Victor Hugo"
+      ],
+      "genres": [
+        "drama",
+        "classics",
+        "politics"
+      ],
+      "languages": [
+        "English"
+      ],
+      "countries": [
+        "France"
+      ],
+      "synopsis": "A convict re-enters a society built to keep him a criminal, and one act of mercy costs decades.",
+      "gutenbergId": 135,
+      "freeReadingUrl": "https://www.gutenberg.org/ebooks/135"
+    },
+    {
+      "id": "pg-iliad",
+      "mediaType": "book",
+      "title": "The Iliad",
+      "year": 1898,
+      "creators": [
+        "Homer (tr. Samuel Butler)"
+      ],
+      "genres": [
+        "poetry",
+        "classics",
+        "war"
+      ],
+      "languages": [
+        "English"
+      ],
+      "countries": [
+        "Greece"
+      ],
+      "synopsis": "In the last weeks of the Trojan War, one hero's rage sets the terms of honor for every war story since.",
+      "gutenbergId": 6130,
+      "freeReadingUrl": "https://www.gutenberg.org/ebooks/6130"
+    },
+    {
+      "id": "pg-republic",
+      "mediaType": "book",
+      "title": "The Republic",
+      "year": 1871,
+      "creators": [
+        "Plato (tr. Benjamin Jowett)"
+      ],
+      "genres": [
+        "philosophy",
+        "classics",
+        "non-fiction"
+      ],
+      "languages": [
+        "English"
+      ],
+      "countries": [
+        "Greece"
+      ],
+      "synopsis": "Socrates builds a city in words to find out what justice is, and ends up interrogating every ideal state since.",
+      "gutenbergId": 1497,
+      "freeReadingUrl": "https://www.gutenberg.org/ebooks/1497"
+    },
+    {
+      "id": "pg-rubaiyat",
+      "mediaType": "book",
+      "title": "Rubáiyát of Omar Khayyám",
+      "year": 1859,
+      "creators": [
+        "Omar Khayyám (tr. Edward FitzGerald)"
+      ],
+      "genres": [
+        "poetry",
+        "classics"
+      ],
+      "languages": [
+        "English"
+      ],
+      "countries": [
+        "Iran"
+      ],
+      "synopsis": "A Persian astronomer's four-line meditations on wine, dust and time became, in Victorian translation, one of the most quoted poems in English.",
+      "gutenbergId": 246,
+      "freeReadingUrl": "https://www.gutenberg.org/ebooks/246"
+    },
+    {
+      "id": "pg-meditations",
+      "mediaType": "book",
+      "title": "Meditations",
+      "year": 1862,
+      "creators": [
+        "Marcus Aurelius (tr. George Long)"
+      ],
+      "genres": [
+        "philosophy",
+        "classics",
+        "non-fiction"
+      ],
+      "languages": [
+        "English"
+      ],
+      "countries": [
+        "Italy"
+      ],
+      "synopsis": "The most powerful man in Rome wrote notes to himself about humility, mortality and doing the work anyway — and never meant us to read them.",
+      "gutenbergId": 2680,
+      "freeReadingUrl": "https://www.gutenberg.org/ebooks/2680"
+    },
+    {
+      "id": "pg-brothers-karamazov",
+      "mediaType": "book",
+      "title": "The Brothers Karamazov",
+      "originalTitle": "Братья Карамазовы",
+      "year": 1880,
+      "creators": [
+        "Fyodor Dostoevsky (tr. Constance Garnett)"
+      ],
+      "genres": [
+        "drama",
+        "classics",
+        "philosophical-fiction"
+      ],
+      "languages": [
+        "English"
+      ],
+      "countries": [
+        "Russia"
+      ],
+      "synopsis": "Three brothers and their rotten father collide over money, faith and a murder, and every courtroom in the novel is inside a soul.",
+      "gutenbergId": 28054,
+      "freeReadingUrl": "https://www.gutenberg.org/ebooks/28054"
+    }
+  ]
+}
